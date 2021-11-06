@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import './instuction_page.dart';
+
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     statusBarIconBrightness: Brightness.dark,
@@ -91,15 +93,25 @@ class MyApp extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  TextButton(
-                      style: TextButton.styleFrom(
-                        primary: Colors.lightBlue.shade700,
-                      ),
-                      onPressed: () {},
-                      child: Text(
-                        'Got a Minute',
-                        style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
-                      ),
+                  Builder(
+                    builder: (context) {
+                      return TextButton(
+                        style: TextButton.styleFrom(
+                          primary: Colors.lightBlue.shade700,
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => instructionPage()));
+                        },
+                        child: Text(
+                          'Got a Minute',
+                          style:
+                              TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
+                        ),
+                      );
+                    }
                   ),
                   Icon(
                     Icons.arrow_forward_sharp,
