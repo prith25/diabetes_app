@@ -29,25 +29,27 @@ class questionOne extends StatelessWidget {
               children: [
                 Text(
                   'Your Score:  0',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300),
                 )
               ],
             ),
           ),
           SizedBox(height: 50),
           Container(
+            padding: EdgeInsets.all(25),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
                   'Are you a',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.w300),
                 )
               ],
             ),
           ),
           SizedBox(height: 30),
           Container(
+            padding: EdgeInsets.all(2),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

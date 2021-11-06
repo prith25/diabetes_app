@@ -34,7 +34,7 @@ class questionFive extends StatelessWidget {
               children: [
                 Text(
                   'Your Score:  $score',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300),
                 )
               ],
             ),
@@ -47,14 +47,14 @@ class questionFive extends StatelessWidget {
               children: [
                 Text(
                   'Do you have High blood Pressure?',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.w300),
                 )
               ],
             ),
           ),
           SizedBox(height: 30),
           Container(
-            padding: EdgeInsets.fromLTRB(85, 15, 85, 0),
+            padding: EdgeInsets.fromLTRB(55, 0, 55, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,

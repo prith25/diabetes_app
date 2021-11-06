@@ -29,19 +29,20 @@ class instructionPage extends StatelessWidget {
               children: [
                 Text(
                   'Your Score:  0',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300),
                 )
               ],
             ),
           ),
-          SizedBox(height: 60),
+          SizedBox(height: 15),
           Container(
+            padding: EdgeInsets.all(15),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
                   'You just have to answer ',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.w300),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -49,46 +50,49 @@ class instructionPage extends StatelessWidget {
                     Text(
                       '6 questions',
                       style: TextStyle(
-                          fontSize: 30,
+                          fontSize: 25,
                           color: Colors.lightBlue.shade700,
                           fontWeight: FontWeight.w300),
                     ),
                     Text(
                       ' and your score',
                       style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
+                          TextStyle(fontSize: 22, fontWeight: FontWeight.w300),
                     ),
                   ],
                 ),
                 Text(
                   'will be updated in the top',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.w300),
                 ),
               ],
             ),
           ),
           SizedBox(height: 20),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'If your score is 5 or more,',
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
-              ),
-              Text(
-                'you are likely to have',
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
-              ),
-              Text(
-                'Prediabetes',
-                style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.red.shade600,
-                    fontWeight: FontWeight.w300),
-              ),
-            ],
+          Container(
+            padding: EdgeInsets.all(25),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'If your score is 5 or more,',
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.w300),
+                ),
+                Text(
+                  'you are likely to have',
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.w300),
+                ),
+                Text(
+                  'Prediabetes',
+                  style: TextStyle(
+                      fontSize: 25,
+                      color: Colors.red.shade600,
+                      fontWeight: FontWeight.w300),
+                ),
+              ],
+            ),
           ),
-          SizedBox(height: 80),
+          SizedBox(height: 60),
           Container(
             child: Column(
               children: [
@@ -103,7 +107,7 @@ class instructionPage extends StatelessWidget {
                       padding: EdgeInsets.all(12.0),
                       primary: Colors.lightBlue.shade700,
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(50)),
+                          borderRadius: BorderRadius.circular(10)),
                       maximumSize: Size.infinite),
                   child: Text(
                     'Let\'s Begin',

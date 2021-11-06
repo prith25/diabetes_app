@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:simple_url_preview/simple_url_preview.dart';
 
 class resultPage2 extends StatelessWidget {
   String result = '';
@@ -43,7 +42,7 @@ class resultPage2 extends StatelessWidget {
               children: [
                 Text(
                   'Your Score:  $score',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300),
                 )
               ],
             ),
@@ -56,28 +55,32 @@ class resultPage2 extends StatelessWidget {
               children: [
                 Text('$result',
                     style:
-                        TextStyle(fontSize: 30, fontWeight: FontWeight.w300)),
+                        TextStyle(fontSize: 22, fontWeight: FontWeight.w300)),
               ],
             ),
           ),
           SizedBox(height: 50),
           Container(
-            padding: EdgeInsets.all(40),
+            padding: EdgeInsets.only(left:40.0, top: 20.0, right:40.0 ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('Please visit our ',
+                Text('Please visit our',
                     style:
-                        TextStyle(fontSize: 30, fontWeight: FontWeight.w300)),
+                        TextStyle(fontSize: 22, fontWeight: FontWeight.w300)),
                 TextButton(
                     onPressed: () {
                       openURL();
                     },
                     child: Text('Website',
-                        style:
-                        TextStyle(fontSize: 30, fontWeight: FontWeight.w300))),
+                        style: TextStyle(
+                            fontSize: 25, fontWeight: FontWeight.w300))),
               ],
             ),
+          ),
+          Center(
+            child: Text('for more information',
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.w300)),
           ),
         ],
       ),

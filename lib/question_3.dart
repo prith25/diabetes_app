@@ -34,7 +34,7 @@ class questionThree extends StatelessWidget {
               children: [
                 Text(
                   'Your Score:  $score',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300),
                 )
               ],
             ),
@@ -46,14 +46,14 @@ class questionThree extends StatelessWidget {
               children: [
                 Text(
                   'Are you physcially Active?',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.w300),
                 )
               ],
             ),
           ),
           SizedBox(height: 50),
           Container(
-            padding: EdgeInsets.fromLTRB(75, 15, 75, 0),
+            padding: EdgeInsets.fromLTRB(55, 0, 55, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,

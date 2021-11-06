@@ -5,6 +5,7 @@ import './instuction_page.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Colors.white,
     statusBarIconBrightness: Brightness.dark,
   ));
   runApp(const MyApp());
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         body: Container(
+          padding: EdgeInsets.all(25),
           decoration: BoxDecoration(
             color: Colors.white,
           ),
@@ -47,22 +49,22 @@ class MyApp extends StatelessWidget {
                     Text(
                       '1 in 3',
                       style: TextStyle(
-                          fontSize: 40,
+                          fontSize: 30,
                           color: Colors.lightBlue.shade700,
                           fontWeight: FontWeight.w300),
                     ),
                     Text(
                       ' people have',
                       style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.w300),
                     ),
                   ],
                 ),
               ),
               Center(
                 child: Text(
-                  'Prediabetes',
-                  style: TextStyle(fontSize: 40, fontWeight: FontWeight.w300),
+                  '"Prediabetes"',
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
                 ),
               ),
               SizedBox(height: 50),
@@ -72,12 +74,12 @@ class MyApp extends StatelessWidget {
                 children: [
                   Text(
                     'It takes only ',
-                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300),
                   ),
                   Text(
                     '60 Seconds',
                     style: TextStyle(
-                        fontSize: 30,
+                        fontSize: 25,
                         color: Colors.lightBlue.shade700,
                         fontWeight: FontWeight.w300),
                   ),
@@ -86,7 +88,7 @@ class MyApp extends StatelessWidget {
               Center(
                 child: Text(
                   'for a Prediabetes test',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w300),
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300),
                 ),
               ),
               SizedBox(height: 50),
@@ -115,6 +117,7 @@ class MyApp extends StatelessWidget {
                   ),
                   Icon(
                     Icons.arrow_forward_sharp,
+                    color: Colors.lightBlue.shade600,
                   ),
                 ],
               ),
