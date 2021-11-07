@@ -47,40 +47,39 @@ class questionOne extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 30),
+          SizedBox(height: 10),
           Container(
-            padding: EdgeInsets.all(2),
+            padding: EdgeInsets.only(left:55.0, right:55.0),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                IconButton(
-                  onPressed: () {
+                InkWell(
+                  onTap: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => questionTwo(1)));
                   },
-                  splashColor: Colors.lightBlue.shade200,
-                  icon: Icon(
-                    Icons.male,
+                  child: Ink.image(
+                    image: AssetImage('images/8.png'),
+                    height: 125,
+                    width: 125,
                   ),
-                  iconSize: 100.0,
-                  color: Colors.lightBlue.shade700,
+
                 ),
                 SizedBox(height: 100),
-                IconButton(
-                  onPressed: () {
+                InkWell(
+                  onTap: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => questionTwo(0)));
                   },
-                  splashColor: Colors.lightBlue.shade200,
-                  icon: Icon(
-                    Icons.female,
+                  child: Ink.image(
+                    image: AssetImage('images/7.png'),
+                    height: 100,
+                    width: 100,
                   ),
-                  iconSize: 100.0,
-                  color: Colors.lightBlue.shade700,
                 ),
               ],
             ),
