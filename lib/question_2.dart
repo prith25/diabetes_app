@@ -41,7 +41,7 @@ class questionTwo extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 50),
+          SizedBox(height: 20),
           Container(
             padding: EdgeInsets.all(25),
             child: Column(

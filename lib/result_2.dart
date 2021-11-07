@@ -47,9 +47,9 @@ class resultPage2 extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 50),
+          SizedBox(height: 70),
           Container(
-            padding: EdgeInsets.all(50),
+            padding: EdgeInsets.all(30),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -59,7 +59,7 @@ class resultPage2 extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 50),
+          SizedBox(height: 100),
           Container(
             padding: EdgeInsets.only(left:40.0, top: 20.0, right:40.0 ),
             child: Row(

@@ -56,7 +56,6 @@ class questionThree extends StatelessWidget {
             padding: EdgeInsets.fromLTRB(55, 0, 55, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 InkWell(
                   onTap: () {
