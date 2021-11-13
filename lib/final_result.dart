@@ -2,21 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:restart_app/restart_app.dart';
 
-import './main.dart';
-
-class resultPage2 extends StatelessWidget {
+class finalresultPage extends StatelessWidget {
   String result = '';
   int score = 0;
 
   openURL() async {
-    if (await canLaunch("https://diabeticks.in/")) {
-      await launch("https://diabeticks.in/");
+    var url = "https://www.diabeticks.in";
+    if (await canLaunch(url)) {
+      await launch(
+        url,
+        forceSafariVC: false,
+        forceWebView: false,
+        headers: <String, String>{'header_key': 'header_value'},
+      );
     } else {
-      throw 'Could not open the website';
+      throw 'Could not launch $url';
     }
   }
 
-  resultPage2(this.score, this.result);
+  finalresultPage(this.score, this.result);
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +62,7 @@ class resultPage2 extends StatelessWidget {
               children: [
                 Text('$result',
                     style:
-                        TextStyle(fontSize: 22, fontWeight: FontWeight.w300)),
+                    TextStyle(fontSize: 22, fontWeight: FontWeight.w300)),
               ],
             ),
           ),
@@ -70,7 +74,7 @@ class resultPage2 extends StatelessWidget {
               children: [
                 Text('Please visit our',
                     style:
-                        TextStyle(fontSize: 22, fontWeight: FontWeight.w300)),
+                    TextStyle(fontSize: 22, fontWeight: FontWeight.w300)),
                 TextButton(
                     onPressed: () {
                       openURL();
@@ -102,7 +106,7 @@ class resultPage2 extends StatelessWidget {
                   style:
                   TextStyle(fontSize: 20, fontWeight: FontWeight.w300),
                 )),
-          )
+          ),
         ],
       ),
     );
